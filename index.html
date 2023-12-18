@@ -1722,7 +1722,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>  
-    <script>
+<script>
+    // Define a function that sets the width and height of the elements using setAttribute
+    function setWidthHeight () {
         let dw = document.documentElement.clientWidth;
         console.log(dw);
         let dh = document.documentElement.clientHeight;
@@ -1734,7 +1736,12 @@
             // Use setAttribute to set the style attribute with the width and height values
             hexlist[i].setAttribute('style', 'width: 8vw; height: ' + y + 'vh');
         }
-    </script>  
+    }
+
+    // Assign the function to the window.onload event
+    window.onload = setWidthHeight;
+</script>
+
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>    
 </body>
