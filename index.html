@@ -1723,21 +1723,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>  
     <script>
-        let dw=document.documentElement.clientWidth;
+        let dw = document.documentElement.clientWidth;
         console.log(dw);
-        let dh=document.documentElement.clientHeight;
+        let dh = document.documentElement.clientHeight;
         console.log(dh);
-        //let  hex=document.querySelector('.hexagon');
-        //hex.style.width='8vw';
-        //document.querySelector('.hexagon').setAttribute("style","width:8vw");
-        let y=(0.08*dw)*11/(10*dh)*100;
+        let y = (0.08 * dw) * 11 / (10 * dh) * 100;
         console.log(y);
-        //document.querySelector('.hexagon').setAttribute("style","height:ypx");
-        //hex.style.height= y + 'px';
-        let hexlist=document.getElementsByClassName('hexagon');
-        for(var i=0;i<hexlist.length;i++){
-            hexlist[i].style.width='8vw';
-            hexlist[i].style.height= y +'vh';
+        let hexlist = document.getElementsByClassName('hexagon');
+        for (var i = 0; i < hexlist.length; i++) {
+            // Use setAttribute to set the style attribute with the width and height values
+            hexlist[i].setAttribute('style', 'width: 8vw; height: ' + y + 'vh');
         }
     </script>  
     <script src="swiper-bundle.min.js"></script>
