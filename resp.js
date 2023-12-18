@@ -1,0 +1,14 @@
+burger=document.getElementById('burgerbutton');
+toggle=document.getElementById('toggleburger');
+console.log(toggle);
+burger.addEventListener('click',()=>{
+    console.log(toggle.href);
+    if(toggle.href.includes("css/home-responsive.css")){
+        toggle.href="";
+        console.log(toggle);
+    }
+    else{
+        toggle.href="css/home-responsive.css";
+        console.log(toggle);
+    }
+})
